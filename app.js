@@ -13,10 +13,10 @@ function clearInput() {
 }
 
 function getResult() {
-    if (input.innerHTML == "undefined") {
+    result.innerHTML = eval(input.innerHTML)
+    if (result.innerHTML == "undefined") {
         result.innerHTML = "0"
     }
-    result.innerHTML = eval(input.innerHTML)
 }
 
 function returned() {
