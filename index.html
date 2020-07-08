@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Calculator</title>
 </head>
+
 <body>
   <div class="container">
     <div class="screen">
@@ -13,26 +15,26 @@
       <div class="result" id="result"></div>
     </div>
     <span>Calculator</span>
-    <button class="btn" id="del" onclick="clearInput()">AC</button>
-    <button class="btn" id="(" onclick="getButton('(')">(</button>
-    <button class="btn" id=")" onclick="getButton(')')">)</button>
-    <button class="btn" id="return" onclick="returned()">&larr;</button>
-    <button class="btn" id="7" onclick="getButton('7')">7</button>
-    <button class="btn" id="8" onclick="getButton('8')">8</button>
-    <button class="btn" id="9" onclick="getButton('9')">9</button>
-    <button class="btn" id="*" onclick="getButton('*')">&times;</button>
-    <button class="btn" id="4" onclick="getButton('4')">4</button>
-    <button class="btn" id="5" onclick="getButton('5')">5</button>
-    <button class="btn" id="6" onclick="getButton('6')">6</button>
-    <button class="btn" id="/" onclick="getButton('/')">&divide;</button>
-    <button class="btn" id="1" onclick="getButton('1')">1</button>
-    <button class="btn" id="2" onclick="getButton('2')">2</button>
-    <button class="btn" id="3" onclick="getButton('3')">3</button>
-    <button class="btn" id="-" onclick="getButton('-')">&minus;</button>
-    <button class="btn" id="0" onclick="getButton('0')">0</button>
-    <button class="btn" id="." onclick="getButton('.')">.</button>
-    <button class="btn" id="=" onclick="getResult()">&equals;</button>
-    <button class="btn" id="+" onclick="getButton('+')">&plus;</button>
+    <button class="btn" id="del" onclick="clearInput();playAudio()">AC</button>
+    <button class="btn" id="(" onclick="getButton('(');playAudio()">(</button>
+    <button class="btn" id=")" onclick="getButton(')');playAudio()">)</button>
+    <button class="btn" id="return" onclick="returned();playAudio()">&larr;</button>
+    <button class="btn" id="7" onclick="getButton('7');playAudio()">7</button>
+    <button class="btn" id="8" onclick="getButton('8');playAudio()">8</button>
+    <button class="btn" id="9" onclick="getButton('9');playAudio()">9</button>
+    <button class="btn" id="*" onclick="getButton('*');playAudio()">&times;</button>
+    <button class="btn" id="4" onclick="getButton('4');playAudio()">4</button>
+    <button class="btn" id="5" onclick="getButton('5');playAudio()">5</button>
+    <button class="btn" id="6" onclick="getButton('6');playAudio()">6</button>
+    <button class="btn" id="/" onclick="getButton('/');playAudio()">&divide;</button>
+    <button class="btn" id="1" onclick="getButton('1');playAudio()">1</button>
+    <button class="btn" id="2" onclick="getButton('2');playAudio()">2</button>
+    <button class="btn" id="3" onclick="getButton('3');playAudio()">3</button>
+    <button class="btn" id="-" onclick="getButton('-');playAudio()">&minus;</button>
+    <button class="btn" id="0" onclick="getButton('0');playAudio()">0</button>
+    <button class="btn" id="." onclick="getButton('.');playAudio()">.</button>
+    <button class="btn" id="=" onclick="getResult();playAudio()">&equals;</button>
+    <button class="btn" id="+" onclick="getButton('+');playAudio()">&plus;</button>
 
 
   </div>
